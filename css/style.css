@@ -1,8 +1,8 @@
 
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
+  /* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400'); */
 
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Tahoma', 'Geneva', sans-serif;
     overflow-x: hidden;
     background: #f9f9f9;
   }
@@ -80,6 +80,10 @@
     padding: 100px 0;
   }
 
+  .fix {
+    overflow: hidden;
+  }
+
   #contact,
   footer {
     background: #ffffff;
@@ -133,6 +137,15 @@
     color: #ffffff;
   }
 
+  .section-headline h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    position: relative;
+    text-transform: capitalize;
+  }
+
 
 
   /*---------------------------------------
@@ -156,7 +169,221 @@
     color: #ffffff;
   }
 
+  /*----------------------------------------
+      Portfolio Area Css
+----------------------------------------*/
 
+.pst-content {
+  padding-left: 10px;
+}
+
+.project-menu {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.project-menu li {
+  display: inline-block;
+}
+
+.project-menu li a {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #444;
+  border-radius: 20px;
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 4px;
+  padding: 6px 15px;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+}
+
+.project-menu li a.active, .project-menu li a:hover {
+  border-color: #3EC1D5;
+  background: #3EC1D5;
+  color: #fff;
+  text-decoration: none;
+}
+
+.single-awesome-portfolio {
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 25%;
+  position: relative;
+}
+
+.single-awesome-project {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.first-item {
+  margin-bottom: 30px;
+}
+
+.awesome-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.awesome-img>a {
+  display: block;
+  position: relative;
+}
+
+.single-awesome-project:hover .awesome-img>a::after {
+  opacity: 1;
+}
+
+.single-awesome-project:hover .add-actions {
+  opacity: 1;
+  bottom: 0;
+}
+
+.awesome-img>a::after {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.add-actions {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  bottom: 30px;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 10px 15px;
+  position: absolute;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+}
+
+.project-dec {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project-dec a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project-dec h4 {
+  margin-bottom: 5px;
+}
+
+.project-dec h4:hover {
+  color: #fff;
+}
+
+.project-dec h4 {
+  color: #ddd;
+  font-size: 24px;
+  margin-top: -45px;
+  padding-top: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.project-dec span {
+  color: #ddd;
+  font-size: 13px;
+}
+
+.project-action-btn {
+  display: block;
+  height: 100%;
+  text-align: center;
+  transition: all 1s ease 0s;
+  width: 100%;
+}
+
+.project-action-btn li {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project-action-btn li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+  /*---------------------------------------
+       Membership            
+  -----------------------------------------*/
+  .block-5 {
+    --block-background: #f8f8f8;
+    --block-text-color: var(--text-primary);
+    background: var(--block-background);
+    color: var(--block-text-color);
+  }
+
+  .space-between-blocks {
+    padding-top: var(--space-between-blocks-small-screens);
+    padding-bottom: var(--space-between-blocks-small-screens);
+  }
+
+  .block__title {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.4;
+  }
+
+  .card-2 {
+    margin-bottom: 2.1rem;
+  }
+  
+  .card-2:last-child {
+    margin-bottom: 0;
+  }
+  
+  .card-2__symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    border: 1px solid #e01705;
+    border-radius: 50px;
+    background: white;
+    padding: 25px;
+    color: #e01705;
+  }
+
+  
+  @media(min-width: 992px) {
+    .space-between-blocks {
+      padding-top: var(--space-between-blocks);
+      padding-bottom: var(--space-between-blocks);
+    }
+
+    .card-2__symbol {
+      height: 3.8rem;
+      width: 3.8rem;
+    }
+
+    .block__title {
+      font-size: 2.5rem;
+    }
+  }
 
   /*---------------------------------------
        PRE LOADER              
@@ -224,15 +451,22 @@
 
   .custom-navbar .nav li a {
     font-size: 16px;
-    font-weight: normal;
-    color: #f0f0f0;
+    font-weight: 600;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: #286090;
     padding-right: 22px;
     padding-left: 22px;
   }
 
+  .contact_us{
+    border: 1px solid;
+    border-radius: 50px;
+    display: inline-block;
+  }
+
   .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #202020;
+    color: #286090;
   }
 
   .custom-navbar .navbar-nav > li > a:hover,
@@ -274,11 +508,11 @@
     }
 
     .top-nav-collapse .navbar-brand {
-      color: #252525;
+      color: #286090;
     }
 
     .top-nav-collapse .nav li a {
-      color: #575757;
+      color: #286090;
     }
 
     .top-nav-collapse .nav .section-btn a {
@@ -293,8 +527,8 @@
   -----------------------------------------*/
 
   #home {
-    /* background: url('../images/BCP_Logo_Approved.png') no-repeat center center; */
-    background-color: #d77a7a;
+    background: url('../images/5.jpg') no-repeat center center;
+    /* background-color: #d77a7a; */
     background-size: cover;
     vertical-align: middle;
     display: -webkit-box;
@@ -305,7 +539,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    /* min-height: 60vh; */
+    min-height: 100vh;
     position: relative;
     padding-top: 12em;
     text-align: center;
@@ -456,28 +690,28 @@
 
 
   /*---------------------------------------
-      TESTIMONIAL           
+      NEWS & EVENTS         
   -----------------------------------------*/
 
-  #testimonial {
+  #news {
     background: #ffffff;
   }
 
-  #testimonial .col-md-6 {
+  #news .col-md-6 {
     margin: 0;
     padding: 0;
   }
 
-  #testimonial .section-title {
+  #news .section-title {
     padding-bottom: 0;
   }
 
-  #testimonial h1 {
+  #news h1 {
     color: #ffffff;
   }
 
   .testimonial-image {
-    background: url('../images/testimonial-image.jpg') no-repeat center center;
+    background: url('../images/4.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 65vh;

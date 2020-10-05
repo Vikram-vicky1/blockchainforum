@@ -11,13 +11,16 @@
      <meta name="team" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+     <!-- font awesome 5 free -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/owl.carousel.css">
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
      <link rel="stylesheet" href="css/font-awesome.min.css">
 
      <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-style.css">
+     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -33,7 +36,7 @@
 
 
      <!-- MENU -->
-     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation" style="background-color: #fff;">
           <div class="container">
 
                <div class="navbar-header">
@@ -44,17 +47,23 @@
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="index.html" class="navbar-brand"><img src="./images/logo.png" class="mb-2" alt="" height="60"></a>
+                    <a href="index.html" class="navbar-brand" style="padding: 0;">
+                         <img src="./images/logo.png" class="" alt="" height="90">
+                    </a>
                </div>
 
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                         <li><a href="#home" class="smoothScroll">Home</a></li>
-                         <li><a href="#feature" class="smoothScroll"></a></li>
-                         <li><a href="#about" class="smoothScroll">About us</a></li>
-                         <li><a href="#pricing" class="smoothScroll"></a></li>
-                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                         <!-- <li><a href="#home" class="smoothScroll">Home</a></li> -->
+                         <li><a href="#" class="smoothScroll"></a></li>
+                         <li><a href="#feature" class="smoothScroll text-uppercase">About us</a></li>
+                         <li><a href="#" class="smoothScroll text-uppercase">Journals </a></li>
+                         <li><a href="#product" class="smoothScroll text-uppercase">Membership  </a></li>
+                         <li><a href="#news" class="smoothScroll text-uppercase"> News & events  </a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#contact" class="smoothScroll text-uppercase contact_us"> <span>Join us</span></a></li>
                     </ul>
                </div>
 
@@ -70,10 +79,15 @@
 
                     <div class="col-md-offset-3 col-md-6 col-sm-12">
                          <div class="home-info">
-                              <h1 class="text-uppercase">Blockchain for Productivity</h1>
-                              <h3 class="text-light">Blockchain for Productivity Forum is an initiative to accelerate
-                                   our progress in Blockchain Technology</h3>
-                              
+                              <h3 class="text-uppercase">Blockchain for Productivity</h3>
+                              <h1 class="text-light" style="color: #fff; text-transform: none;">
+                                    Blockchain for Productivity Forum is an initiative to accelerate
+                              our progress in Blockchain Technology
+                              </h1>
+                              <form action="" method="get" class="online-form">
+                                   <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                                   <button type="submit" class="form-control">Get started</button>
+                              </form>
                          </div>
                     </div>
 
@@ -81,7 +95,7 @@
           </div>
      </section>
 
-     <section id="about" data-stellar-background-ratio="0.5">
+     <!-- <section id="about" data-stellar-background-ratio="0.5">
           <div class="container">
                <div class="row">
                     <div class="col-md-offset-1 col-md-10 col-sm-12">
@@ -154,6 +168,420 @@
                     </div>
                </div>
           </div>
+     </section> -->
+
+     <section id="feature" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h1>About us</h1>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <ul class="nav nav-tabs" role="tablist">
+
+                              <li class="active"><a href="#tab04" aria-controls="tab04" role="tab" data-toggle="tab">About</a></li>
+
+                              <li><a href="#tab01" aria-controls="tab01" role="tab" data-toggle="tab">Vision</a></li>
+
+                              <li><a href="#tab02" aria-controls="tab02" role="tab" data-toggle="tab">Mission</a></li>
+
+                              <li><a href="#tab03" aria-controls="tab03" role="tab" data-toggle="tab">Value Proposition</a></li>
+
+                         </ul>
+
+                         <div class="tab-content">
+                              <div class="tab-pane active" id="tab04" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <p> 
+                                             <b> Blockchain for Productivity Forum</b> is an initiative to accelerate
+                                             our progress in Blockchain Technology and to further carryout social
+                                             projects by creating innovative solutions to bring about a positive
+                                             change primarily in the life of rural people as their social welfare
+                                             initiative by converting unemployment into entrepreneurship
+                                             supported with scholarly, research and creative endeavors with
+                                             commitment to society
+                                        </p>
+                                   </div>
+                              </div>
+
+                              <div class="tab-pane" id="tab01" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <p> Blockchain for Productivity Forum, is incorporated with the sole
+                                             vision of creating a forum of Experts for serving our community
+                                             through Blockchain Technology that enrich their life and also
+                                             disseminating knowledge among people, Corporations and Govt(s).
+                                             it also aims to help to formulate appropriate policy or provide a
+                                             suitable solution for a specific problem using ICT technologies. It will
+                                             also expand its reach with experts both in India and abroad and have
+                                             partnership among academic and business organizations to offer a creative
+                                             and collective contributions to the country.</p>
+                                   </div>
+                              </div>
+
+                              <div class="tab-pane" id="tab02" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <p>
+                                             The establishment of Blockchain for Productivity Forum has a one
+                                             stop mission- “Upliftment of the communities by facilitating services
+                                             or business via various platforms leveraging ICT technology and
+                                             keeping the records/transaction on secure, immutable distributed
+                                             ledger technology (DLT) (also called Blockchain) in a sustainable
+                                             and effective manner.” Our mission is to maintain a level of
+                                             excellence and standards in all programs that will give the forum a
+                                             national and international significance.
+                                        </p>
+                                   </div>
+                                   <div class="tab-pane-item">
+                                        <p> Our effort will be to learn
+                                             and discover the transformational potential of Blockchain
+                                             Technology and its ability to change the life of common people.
+                                        </p>
+                                   </div>
+                              </div>
+
+                              <div class="tab-pane" id="tab03" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <p>
+                                             A network of like-minded people will help in building of a robust
+                                        community which will implement Blockchain as a Technology <b> as per
+                                        the need / requirement basis in various prospective sectors.</b>
+                                        The forum will take effort in building Collaborative frame works for
+                                        engagement between Governments, Industry and Academia to foster
+                                        growth and promote innovative solutions in Blockchin Technology and its
+                                        ability to change the life of society.
+                                        </p>
+                                   </div>
+                                   <div class="tab-pane-item">
+                                        <p><b> Blockchain for Productivity Forum </b> has ambitious goals for the
+                                             future. We want to improve people’s lives by building the digital
+                                             infrastructure for the various sectors in the future.This form will be
+                                             able to serve society through coordinated nationwide outreach
+                                             programs .We’re looking for Self driven people or organizations to
+                                             help us realize that vision with commitment and passion .
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="feature-image">
+                              <img src="images/3.png" class="img-responsive" alt="Thin Laptop">                             
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <section id="product" class="block-5 space-between-blocks">
+          <div class="container">
+               <!-- HEADER -->
+               <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="section-headline text-center">
+                        <h2>Membership</h2>
+                      </div>
+                    </div>
+               </div>
+               <div class="row align-items-center flex-column-reverse flex-lg-row px-2">
+               <!-- LEFT CONTENT -->
+               <div class="col-lg-4">
+                    <div class="card-2 d-flex flex-row flex-lg-row-reverse">
+                    <div>
+                    <span class="card-2__symbol mx-auto">
+                         <i class="fas fa-users"></i>
+                    </span>
+                    </div>
+                    <div class="px-2"></div>
+                    <div>
+                    <h3 class="card-2__title mb-2">Network</h3>
+                    <p class="card-2__paragraph">
+                         Lorem Ipsum is simply dummy text of
+                         the printing and typesetting industry.
+                    </p>
+                    </div>
+                    </div>
+                    <div class="card-2 d-flex flex-row flex-lg-row-reverse">
+                    <div>
+                    <span class="card-2__symbol mx-auto">
+                         <i class="fas fa-graduation-cap"></i>
+                    </span>
+                    </div>
+                    <div class="px-2"></div>
+                    <div>
+                    <h3 class="card-2__title mb-2">Education</h3>
+                    <p class="card-2__paragraph">
+                         Lorem Ipsum is simply dummy text of
+                         the printing and typesetting industry.
+                    </p>
+                    </div>
+                    </div>
+                    <div class="card-2 d-flex flex-row flex-lg-row-reverse">
+                    <div>
+                    <span class="card-2__symbol mx-auto">
+                         <i class="far fa-lightbulb"></i>
+                    </span>
+                    </div>
+                    <div class="px-2"></div>
+                    <div>
+                    <h3 class="card-2__title mb-2">Solutions</h3>
+                    <p class="card-2__paragraph">
+                         Lorem Ipsum is simply dummy text of
+                         the printing and typesetting industry.
+                    </p>
+                    </div>
+                    </div>
+               </div>
+               <!-- IMAGE -->
+               <div class="col-lg-4 my-5 text-center">
+                    <img src="./images/portfolio/2.jpg" class="img-responsive">
+               </div>
+               <!-- RIGHT CONTENT -->
+               <div class="col-lg-4">
+                    <div class="card-2 d-flex">
+                    <div>
+                    <span class="card-2__symbol mx-auto">
+                         <i class="fas fa-bullhorn"></i>
+                    </span>
+                    </div>
+                    <div class="px-2"></div>
+                    <div>
+                    <h3 class="card-2__title mb-2">Promote</h3>
+                    <p class="card-2__paragraph">
+                         Lorem Ipsum is simply dummy text of
+                         the printing and typesetting industry.
+                    </p>
+                    </div>
+                    </div>
+                    <div class="card-2 d-flex">
+                    <div>
+                    <span class="card-2__symbol mx-auto">
+                         <i class="fas fa-redo"></i>
+                    </span>
+                    </div>
+                    <div class="px-2"></div>
+                    <div>
+                    <h3 class="card-2__title mb-2">Influence</h3>
+                    <p class="card-2__paragraph">
+                         Lorem Ipsum is simply dummy text of
+                         the printing and typesetting industry.
+                    </p>
+                    </div>
+                    </div>
+                    <div class="card-2 d-flex">
+                    <div>
+                    <span class="card-2__symbol mx-auto">
+                         <i class="fas fa-dollar-sign"></i>
+                    </span>
+                    </div>
+                    <div class="px-2"></div>
+                    <div>
+                    <h3 class="card-2__title mb-2">Reduce cost</h3>
+                    <p class="card-2__paragraph">
+                         Lorem Ipsum is simply dummy text of
+                         the printing and typesetting industry.
+                    </p>
+                    </div>
+                    </div>
+               </div>
+               </div>
+          </div>
+     </section>
+
+     <section id="portfolio" class="portfolio-area area-padding fix">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline text-center">
+                  <h2>Our Portfolio</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Start Portfolio -page -->
+              <div class="awesome-project-1 fix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="awesome-menu ">
+                    <ul class="project-menu">
+                      <li>
+                        <a href="#" class="active" data-filter="*">All</a>
+                      </li>
+                      <li>
+                        <a href="#" data-filter=".development">Development</a>
+                      </li>
+                      <li>
+                        <a href="#" data-filter=".design">Design</a>
+                      </li>
+                      <li>
+                        <a href="#" data-filter=".photo">Maintain</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="awesome-project-content">
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 design development">
+                  <div class="single-awesome-project">
+                    <div class="awesome-img">
+                      <a href="#"><img src="./images/portfolio/1.jpg" height="auto" width="100%" alt="" /></a>
+                      <div class="add-actions text-center">
+                        <div class="project-dec">
+                          <a class="venobox" data-gall="myGallery" href="./images/portfolio/1.jpg">
+                            <h4>Business City</h4>
+                            <span>Web Development</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single-awesome-project end -->
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 photo">
+                  <div class="single-awesome-project">
+                    <div class="awesome-img">
+                      <a href="#"><img src="./images/portfolio/2.jpg" height="auto" width="100%" alt="" /></a>
+                      <div class="add-actions text-center">
+                        <div class="project-dec">
+                          <a class="venobox" data-gall="myGallery" href="./images/portfolio/1.jpg">
+                            <h4>Blue Sea</h4>
+                            <span>Photosho</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single-awesome-project end -->
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 design">
+                  <div class="single-awesome-project">
+                    <div class="awesome-img">
+                      <a href="#"><img src="./images/portfolio/3.jpg" height="auto" width="100%" alt="" /></a>
+                      <div class="add-actions text-center">
+                        <div class="project-dec">
+                          <a class="venobox" data-gall="myGallery" href="./images/portfolio/3.jpg">
+                            <h4>Beautiful Nature</h4>
+                            <span>Web Design</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single-awesome-project end -->
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 photo development">
+                  <div class="single-awesome-project">
+                    <div class="awesome-img">
+                      <a href="#"><img src="./images/portfolio/4.jpg" height="auto" width="100%" alt="" /></a>
+                      <div class="add-actions text-center">
+                        <div class="project-dec">
+                          <a class="venobox" data-gall="myGallery" href="./images/portfolio/4.jpg">
+                            <h4>Creative Team</h4>
+                            <span>Web design</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single-awesome-project end -->
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 development">
+                  <div class="single-awesome-project">
+                    <div class="awesome-img">
+                      <a href="#"><img src="./images/portfolio/5.jpg" height="auto" width="100%" alt="" /></a>
+                      <div class="add-actions text-center text-center">
+                        <div class="project-dec">
+                          <a class="venobox" data-gall="myGallery" href="./images/portfolio/5.jpg">
+                            <h4>Beautiful Flower</h4>
+                            <span>Web Development</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single-awesome-project end -->
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 design photo">
+                  <div class="single-awesome-project">
+                    <div class="awesome-img">
+                      <a href="#"><img src="./images/portfolio/6.jpg" height="auto" width="100%" alt="" /></a>
+                      <div class="add-actions text-center">
+                        <div class="project-dec">
+                          <a class="venobox" data-gall="myGallery" href="./images/portfolio/6.jpg">
+                            <h4>Night Hill</h4>
+                            <span>Photoshop</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single-awesome-project end -->
+              </div>
+            </div>
+          </div>
+     </section>
+
+     <section id="news" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="testimonial-image"></div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="testimonial-info">
+                              
+                              <div class="section-title">
+                                   <h1>What People Say</h1>
+                              </div>
+
+                              <div class="owl-carousel owl-theme">
+                                   <div class="item">
+                                        <h3>
+                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ipsum optio saepe
+                                              facilis molestias maiores, rem beatae debitis! Hic, nesciunt esse!
+                                        </h3>
+                                        <div class="testimonial-item">
+                                             <img src="images/1.jpg" class="img-responsive" alt="Michael">
+                                             <h4>Michael</h4>
+                                        </div>
+                                   </div>
+
+                                   <div class="item">
+                                        <h3>Donec pretium tristique elit eget sodales. Pellentesque posuere, nunc id interdum venenatis, leo odio cursus sapien, ac malesuada nisl libero eget urna.</h3>
+                                        <div class="testimonial-item">
+                                             <img src="images/2.jpg" class="img-responsive" alt="Sofia">
+                                             <h4>Sofia</h4>
+                                        </div>
+                                   </div>
+
+                                   <div class="item">
+                                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna.</h3>
+                                        <div class="testimonial-item">
+                                             <img src="images/logo.png" class="img-responsive" alt="Monica">
+                                             <h4>Monica</h4>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
      </section>
 
 
@@ -200,9 +628,9 @@
 
                          <div class="col-md-6 col-sm-6">
                               <ul class="social-icon">
-                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                   <li><a href="#" class="fa fa-twitter"></a></li>
-                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                                   <li><a href="https://blocmatrix.com" target="_blank" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="https://blocmatrix.com" target="_blank" class="fa fa-twitter"></a></li>
+                                   <li><a href="https://blocmatrix.com" target="_blank" class="fa fa-instagram"></a></li>
                               </ul>
                          </div>
                     </div>
@@ -218,7 +646,7 @@
      <script src="js/jquery.stellar.min.js"></script>
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/smoothscroll.js"></script>
-     <script src="js/custom.js"></script>
+     <script src="js/main.js"></script>
 
 </body>
 </html>
